@@ -1,0 +1,19 @@
+@page 
+@{
+double costados = 8;
+double altura = 14;
+double basem = 17;
+double basemayor = 20;
+
+double perimetro = Application.Trapecio251E13.Perimetro(costados, basem, basemayor);
+double area = Application.Trapecio251E13.Area(basem, basemayor, altura);
+double volumen = Application.Trapecio251E13.Volumen(area, altura);
+// ToDo
+}
+
+@($"El perímetro de un Trapecio de {costados} cm en los costados, {basem} cm en su base menor y {basemayor} cm en su base mayor es {perimetro}cm");
+<br />
+@($"El área de un Trapecio de costados de {costados} cm por lado, una base menor de {basem} cm y una base mayor de {basemayor} es {area}cm2");
+<br />
+@($"El volumen de un trapecio de area de {area}cm2 y altura de {altura}cm es {volumen}cm3");
+
